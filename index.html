@@ -1,0 +1,170 @@
+<html> 
+<head>
+    <title>Milestone 2</title>
+<style>body{
+    font-family: Arial,sans-seirf;
+    margin:0;
+    padding:0;
+    background-color:lightcyan;
+    text-align: center;
+    position: relative;
+}.header-content {
+    background-color:black;
+    color: #fff;
+}
+.header-content h1{
+    margin-top: 50px;
+    font-size:2.5rem;
+    color: #fff;
+    
+    }
+    .profile-picture{
+        width:110px;
+        height:110px;
+        border-radius:75%;
+        object-fit: cover;
+        position:absolute;
+        top: 15px;
+        left:75px;
+        }
+        nav
+{
+background-color:#333;
+color:#fff;
+font-weight: bold;
+text-align:center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    }
+    nav ul li{
+        display:inline;
+        margin:0 20px;
+        }
+        nav ul li a
+{
+text-decoration:none;
+color:#fff;
+
+}
+.section-content{
+    background-color:#fff;
+    padding:2rem;
+    margin:1rem;
+    border-radius:20px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+    .download-button{
+        background-color:black;
+        color:#fff;
+        padding:0.5rem 1rem;
+        text-decoration:none;
+        border-radius:20px;
+        display:inline-block;
+        margin-top:10px;
+        font-weight: bold;
+        height: 20px;
+        
+        }
+        download-button:hover{
+            background-color:blue;
+            }
+            footer{
+            text-align:center;
+            padding:1rem 0;
+            background-color:#333;
+            color:#fff;
+            }
+            ul{
+            list-style-type:none;
+            padding-left:20px;
+            
+            }
+            </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="download.jpg" alt="your profile picture" class="profile-picture">
+            <h1>NANDHINI</h1>
+            <h2>Passionate on  Learning</h2><br>
+        
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Resume">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello Everyone! This is Nandhini and I am a final year BCA Student,This is my project of NM.</p>
+        </div>
+    </section>
+    <section id="Education">
+<div class="section-content">
+<h2>Education</h2>
+
+<p>BCA COMPUTER APPLICATION<br>
+    Govindhamal aditanor college for women, Trichendur 
+</p>
+</div>
+
+    </section>
+<section id="Skills">
+    <div class="section-content">
+        <h2>Skills</h2>
+    <ul><li>COMMUNICATION SKILLS</li>
+        <li>COMPUTER SKILLS</li>
+        <li>VOLUNTEERING</li>
+        <li>WEB TECHNOLOGIES</li>
+        
+ 
+    </ul>
+    </div>
+</section>
+<section id="Projects">
+    <div class="section-content">
+        <h2>Projects</h2>
+        <ul><li>Project 1</li>
+            <li>Project 2</li>
+        </ul>
+    </div>
+</section>
+<section id="Resume">
+    <center>
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="cv.pdf" class="download-button"><i>Download CV</i></a></a>
+        </div>
+    </center>
+</section>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click',function(e) {
+        e.preventDefault();
+
+        const targetId=this.getAttribute('href').substring(1);
+        const targetElement=document.getElementById(targetId);
+
+
+        if(targetElement){
+            window.scrollTo({
+                top:targetElement.offsetTop,
+                behavior:'smooth'});
+        }
+        }
+);});
+</script>
+<footer>
+    <p>&copy; : 2023 Created by Nandhini</p></footer>
+</footer>
+
+</body>
+</html>
